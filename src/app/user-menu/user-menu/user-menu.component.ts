@@ -42,17 +42,6 @@ export class UserMenuComponent {
     {
       title: 'content 2',
       
-      children: [
-        {
-          title: 'First',
-        },
-        {
-          title: 'Second',
-        },
-        {
-          title: 'Third',
-        },
-      ],
     },
     
   ];

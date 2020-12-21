@@ -2,14 +2,89 @@
     <nb-layout-header fixed>Header</nb-layout-header>
 
     <nb-sidebar>
-      <nb-layout-header subheader>
-        Dash Board
-      </nb-layout-header>
-      <app-user-menu></app-user-menu>
+        <app-user-menu></app-user-menu>
+      
     </nb-sidebar>
     <nb-layout-column>
-      Introduction <button nbButton>Click Here</button>
       
+      <nb-card status="success">
+        <nb-card-header>success color</nb-card-header>
+        <nb-card-body>
+          <div>card body:</div> status is the head card 
+        </nb-card-body>
+        <nb-card-footer>card footer</nb-card-footer>
+      </nb-card>
+
+      <nb-card status="danger">
+        <nb-card-header>danger color</nb-card-header>
+        <nb-card-body>
+          <div>card body:</div>
+          All available color within the theme. 5 semantic colors (primary, success, info, warning, danger), 6 transparency levels for every default semantic color (8%, 16%, 24%, 32%, 40%, 48%) and basic color (backgrounds and texts). Each color has a pallet of 9 shades, except for basic, which has 11 shades. These colors mostly used by status variants of the components.
+        </nb-card-body>
+        <nb-card-footer>card footer </nb-card-footer>
+      </nb-card>
+
+      <nb-card accent="info">
+        <nb-card-header>accent with infor color</nb-card-header>
+        <nb-card-body>
+          accent is small line on top of the head card
+        </nb-card-body>
+        <nb-card-footer>we can have footer or no footer</nb-card-footer>
+      </nb-card>
+
+      <nb-card accent="warning" status="primary">
+        <nb-card-header>accent with warning color and status with primary color</nb-card-header>
+        <nb-card-body>
+          this is combination of accent and status 
+        </nb-card-body>
+        <nb-card-footer>we can have footer or no footer</nb-card-footer>
+      </nb-card>
+
+      <nb-flip-card>
+        <nb-card-front>
+          <nb-card accent="info" status="warning">
+            <nb-card-header>Front Card Header</nb-card-header>
+            <nb-card-body>
+              example of flip card
+            </nb-card-body>
+          </nb-card>
+        </nb-card-front>
+        <nb-card-back>
+          <nb-card accent="primary" status="info">
+            <nb-card-header>Back Card Header</nb-card-header>
+            <nb-card-body>
+              example of flip card
+            </nb-card-body>
+            <nb-card-footer>we can have footer or no footer</nb-card-footer>
+          </nb-card>
+        </nb-card-back>
+      </nb-flip-card>
+
+      <nb-reveal-card>
+        <nb-card-front>
+          <nb-card>
+            <nb-card-header>front card</nb-card-header>
+            <nb-card-body>
+              example of reveal card
+            </nb-card-body>
+      
+            <nb-card-footer>we can have footer or no footer</nb-card-footer>
+          </nb-card>
+        </nb-card-front>
+        <nb-card-back>
+          <nb-card>
+            <nb-card-header>back card</nb-card-header>
+            <nb-card-body>
+              example of reveal card
+            </nb-card-body>
+      
+            <nb-card-footer>we can have footer or no footer</nb-card-footer>
+          </nb-card>
+        </nb-card-back>
+      </nb-reveal-card>
+
+
+
     </nb-layout-column>
     <nb-layout-footer>Contact Information</nb-layout-footer>
   </nb-layout>
